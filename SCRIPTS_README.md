@@ -1,3 +1,5 @@
+
+
 ### Dataverse Export Script
 
 #### Prerequisites
@@ -6,9 +8,9 @@
 2. The API's Token.
 3. All necessary gems; can be installed by running `sudo gem install dataverse dotenv fileutils json` in your terminal.
 4. Files located in the same folder as the script named `.env.dataverse` and `dataverse_api_interface.rb`.
-  4.1 A sample is provided within this repository entitled `.env.dataverse.sample`. Feel free to rename this file and fill out the fields.
-  4.2 All fields must be filled.
-  4.3 The PERSISTENT_IDS variable can accept multiple DOI ids by separating ids with a comma (,). For example, `doi:12.34567/S3/ABCDEF,doi:89.12345/S3/GHIJKL,hdl:1234.56/78912`.
+  - A sample is provided within this repository entitled `.env.dataverse.sample`. Feel free to rename this file and fill out the fields.
+  - All fields must be filled.
+  - The PERSISTENT_IDS variable can accept multiple DOI ids by separating ids with a comma (,). For example, `doi:12.34567/S3/ABCDEF,doi:89.12345/S3/GHIJKL,hdl:1234.56/78912`.
 
 #### Usage
 
@@ -28,8 +30,8 @@
 2. The API's Token.
 3. All necessary gems; can be installed by running `sudo gem install dataverse dotenv fileutils json` in your terminal.
 4. Files located in the same folder as the script named `.env.dataverse` and `dataverse_api_interface.rb`.
-  4.1 A sample is provided within this repository entitled `.env.dataverse.sample`. Feel free to rename this file and fill out the fields.
-  4.2 Only `API_URL` and `API_TOKEN` must be filled.
+  - A sample is provided within this repository entitled `.env.dataverse.sample`. Feel free to rename this file and fill out the fields.
+  - Only `API_URL` and `API_TOKEN` must be filled.
 
 #### Usage
 
@@ -39,3 +41,4 @@
 4. Change directory to the desired download location.
 5. Execute this command in your terminal: `/<full path to>/retrieve_emory_collection_pids_script.rb`
 6. The resulting report (`dataset_pids.txt`) will be downloaded to the same folder that the command was executed in.
+
