@@ -8,7 +8,7 @@
 4. A file located in the same folder as the script named `.env.dataverse`.
   1. A sample is provided within this repository entitled `.env.dataverse.sample`. Feel free to rename this file and fill out the fields.
   2. All fields must be filled.
-  3. The PERSISTENT_IDS variable can accept multiple DOI ids by separating ids with a comma (,). For example, `12.34567/S3/ABCDEF,89.12345/S3/GHIJKL`.
+  3. The PERSISTENT_IDS variable can accept multiple DOI ids by separating ids with a comma (,). For example, `doi:12.34567/S3/ABCDEF,doi:89.12345/S3/GHIJKL,hdl:1234.56/78912`.
  
 #### Usage
 
