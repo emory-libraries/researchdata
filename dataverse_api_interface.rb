@@ -4,7 +4,7 @@ require 'fileutils'
 require 'json'
 
 class DataverseApiInterface
-  def initialize(persistent_ids:)
+  def initialize(persistent_ids: nil)
     @persistent_ids = persistent_ids
   end
 
@@ -17,6 +17,14 @@ class DataverseApiInterface
       download_dataset_versions
       File.write("./#{@filename}/metadata.json", @dataset_obj.export_metadata('dataverse_json').to_json)
     end
+  end
+
+  def retrieve_pids
+    dataset_id_array = []
+    emory_collection = Dataverse::Dataverse.id('Emory')
+
+    emory_collection.each_dataset { |ds| dataset_id_array << ds.pid }
+    File.open("./dataset_pids.txt", "w+") { |f| f.puts(dataset_id_array) }
   end
 
   private
